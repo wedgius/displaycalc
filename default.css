@@ -1,0 +1,194 @@
+body, div, p, input, h1 {
+	margin: 0; border: 0; padding: 0;
+	font-family: "Avenir Next";
+}
+
+body {
+	color: white;
+	
+	background-color: #4054B2;
+	background-image: url(grid.png);
+	background-size: 40px 40px;
+	background-position: top center;	
+}
+
+#calc {
+	width: 760px; height: 480px;
+/*
+	position: relative;
+	top: 50%;
+*/
+	margin: 40px auto;
+}
+
+h1 {
+	width: 100%; height: 40px;
+	margin: 80px 0 0 0;
+	
+	font-size: 20px; font-weight: 300; letter-spacing: 0.2em; line-height: 40px; text-align: center; text-transform: uppercase;
+}
+
+#display-container {
+	width: 440px; height: 440px;
+	float: left;
+	box-sizing: padding-box;
+	margin: 0 40px;
+	
+/* 	background: #000080; */
+}
+
+#display {
+	width: 100%; height: 100%; /* update */
+	float: left;
+	position: relative;
+	box-sizing: border-box;
+	overflow: none;
+	margin: 0% 0%; /* update */
+	border: 2px solid white;
+	
+	-webkit-transition: width 1s, height 1s, margin 1s;
+}
+
+#display-diagonal {
+	width: 2px; height: 100%;
+	position: relative; left: 50%;
+	background: #3A99D8;
+	
+	transform: skewX(-45deg); /* update */
+	
+	-webkit-transition: transform 1s;
+}
+
+.field {
+	width: 120px; height: 40px;
+	
+/* 	background: #3C76C4; */
+}
+
+#field-diagonal {
+	position: absolute;
+	top: 50%; left: 50%;
+	margin: -20px 0 0 -60px;
+}
+
+#fields-left {
+	width: 120px; height: 440px;
+	float: left;
+	
+/* 	background: red; */
+}
+
+#field-ppu {
+	position: relative;
+	top: 50%;
+	margin: -20px 0 0 0;
+}
+
+#fields-right {
+	width: 120px; height: 440px;
+	float: right;
+	
+/* 	background: green; */
+}
+
+#field-height {
+	position: relative;
+	top: 50%;
+	margin: -60px 0 0 0;
+/*
+	position: relative;
+	top: 160px;
+*/
+}
+
+#field-pixel-height {
+	position: relative;
+	top: 50%;
+	margin: 40px 0 0 0;
+/*
+	position: relative;
+	top: 200px;
+*/
+}
+
+#fields-bottom {
+	width: 100%; height: 40px;
+	float: left; clear: both;
+/* 	position: relative; */
+
+	margin: 40px 0 80px 0;	
+	
+/* 	background: gray; */
+}
+
+#field-width {
+	float: left;
+	position: relative;
+	left: 50%;
+	margin: 0 0 0 -140px;
+/*
+	float: left;
+	clear: both;
+	position: relative;
+	left: 50%;
+	margin: 0 0 0 -140px;
+*/
+}
+
+#field-pixel-width {
+	float: left;
+	position: relative;
+	left: 50%;
+	margin: 0 0 0 20px;
+/*
+	float: left; clear: none;
+	position: relative;
+	left: 50%;
+	margin: 0 0 0 20px;
+*/
+}
+
+
+
+
+
+
+
+#field-ratio {
+	position: absolute;
+	
+	top: 620px; left: 840px;
+}
+
+#ratio-colon {
+	position: absolute;
+	left: 0;
+	z-index: -1;
+	
+	font-size: 32px; font-weight: 400; line-height: 40px; text-align: center;
+}
+
+/*
+#ratio-width, #ratio-height {
+	width: 60px;
+	border-bottom: 1px solid white;
+}
+*/
+
+label {
+	display: block;
+	margin: 0 auto;
+	font-size: 10px; font-weight: 600; letter-spacing: 0.2em; line-height: 16px; text-align: center; text-transform: uppercase;
+}
+
+input {
+	width: 100%; height: 24px;
+	display: block;
+	box-sizing: padding-box;
+	margin: 0 auto;
+/* 	border-bottom: 1px solid white; */
+/* 	padding: 0 0 10px 0; */
+	color: white; background: transparent; xbackground: red;
+	font-size: 20px; font-weight: 400; line-height: 24px; text-align: center; vertical-align: top;
+	outline: none;
+}
